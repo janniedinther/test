@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>My Website</title>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2188204058086021"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 style="color: indigo; font-style: italic">Jan van Dinther</h1>
+    <h2 style="font-style: italic; color: indigo">
+      Welcome to my website, plese leave ur email, i want to get to know people
+    </h2>
+    <p>If you hit the button, something amazing will happen!</p>
+    <span>you can click if you want!</span>
+    <span>Maybe you'll recognise someone ;)</span>
+
+    <div>
+      <button
+        id="knop1"
+        onclick="(vervang(), plaatjeZien())"
+        style="
+          background-color: rgb(212, 0, 255);
+          color: white;
+          font-style: italic;
+          font-size: 20px;
+        "
+      >
+        Click on me! (no like really, click on me)
+      </button>
+    </div>
+    <img
+      id="plaatje"
+      src="https://tse4.mm.bing.net/th/id/OIP.FgEQ6i-LTe_c1ZkkmNxowwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+      alt="yo geertje"
+      style="
+        display: none;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin: 0 auto;
+      "
+    />
+    <p
+      id="vrouw"
+      style="color: indigo; font-style: italic; display: none; font-size: 50px"
+    >
+      hey i know him
+    </p>
+    <form action="https://formspree.io/f/mlgwkgjj" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+
+    <script>
+      function vervang() {
+        document.getElementById("knop1").innerHTML = "You clicked it!";
+      }
+      function plaatjeZien() {
+        document.getElementById("plaatje").style.display = "block";
+        document.getElementById("vrouw").style.display = "block";
+      }
+    </script>
+  </body>
+  <style>
+    body {
+      background-color: lightblue;
+      text-align: center;
+    }
+    h1 {
+      background-color: cyan;
+      display: inline-block;
+      border-radius: 10px;
+    }
+    button {
+      margin: 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 10px;
+    }
+  </style>
+</html>
